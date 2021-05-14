@@ -1,0 +1,96 @@
+
+.card2{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2px;
+  margin: .3em;
+  display: grid;
+  /* justify-content: space-between; */
+  /* grid-column:flex-end; */
+  /* grid-template-columns: norepeat; */
+  /* display:gridd;
+  grid-template-columns: repeat(11,1f);
+  column-gap: 2rem; */
+}
+.card{
+  width:5rem;
+  box-shadow: 2px 0 4px  olive;
+}
+
+  hr{
+    border-color: #c0dde4;
+    border-width: .3rem;
+    background-color: #8be1f7;
+    max-width:30%;
+    margin: 1rem auto ; /* der izq y auto sera arriba y abajo*/
+    opacity: 100%;
+    /* box-shadow: 0,0,22px,-4px violet; */
+
+    font-family: Arial, sans-serif; /* choose the font you like */
+    text-align: center; /* horizontal centering */
+    line-height: 1px; /* vertical centering */
+    height: 1px; /* gap between the lines */
+    font-size: 1em; /* choose font size you like */
+    /* border:  solid 2px #1ed30e; */ /* top and bottom borders */
+  /*  margin: 20px 10px; */ /* 20px space above/below, 10px left/right */
+    overflow: visible;
+
+    /* ensure 1px gap between borders */
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  hr::after{
+    content: "§"; /* section sign */
+    font-size: 2em;
+    color: rgb(24, 71, 226);
+    display: inline; /* for vertical centering and background knockout */
+    /* background-color: #454545; */ /* same as background color */
+    /* padding: 0 0.5em; */ /* size of background color knockout */
+
+  }
+  hr::before{
+    
+  }
+
+  /* opera doesn't render correctly. hide section sign */
+    x:-o-prefocus, hr:after {
+    content: "";
+  } 
+
+  .hr--logo {
+    font-family: Arial, sans-serif; /* choose the font you like */
+    text-align: center; /* horizontal centering */
+    line-height: 1px; /* vertical centering */
+    height: 1px; /* gap between the lines */
+    font-size: 1em; /* choose font size you like */
+    border:  solid 2px #1ed30e; /* top and bottom borders */
+    margin: 20px 10px; /* 20px space above/below, 10px left/right */
+    overflow: visible;
+  
+    /* ensure 1px gap between borders */
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  .hr--logo:after {
+    content: "§"; /* section sign */
+    font-size: 2em;
+    color: rgb(78, 24, 226);
+    display: inline; /* for vertical centering and background knockout */
+    /* background-color: #454545; */ /* same as background color */
+    /* padding: 0 0.5em; */ /* size of background color knockout */
+  }

@@ -1,0 +1,31 @@
+/* Traigo para usar de referencia este estilo */
+@import "./../../../pages/admin.component.css";
+
+.navbar {
+   /*  box-shadow:0,10px,15px,-15px rgb(4, 4, 122) ease-in-out; */    
+    /* box-shadow :8px,10px,15px, rgb(4, 4, 122) ease-in-out; */
+    transition: box-shadow .15s ease-in-out;
+    font-size: 1.1rem;
+    /* color: gainsboro; */    
+}
+
+
+ #btn-menu-toggle{
+     /* color: $admin-primary-color; */ /* no me deja traer prop */
+     color: #0d6efd;
+     border:transparent;
+     background-color:transparent;
+     font-size:larger;
+     border-radius:10%;
+ }
+
+ #navbarSupportedContent a{
+    color:#0d6efd;
+}
+
+.shadow{
+    box-shadow: 0px 8px 8px 2px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 0px 8px 8px 2px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 8px 8px 2px rgba(0,0,0,0.59);
+}
+

@@ -1,0 +1,193 @@
+
+.container-fluid{  
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/* *, ::after, ::before {
+  box-sizing: border-box;
+} */
+/* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  text-align: center;
+  align-items:center;
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.navbar-nav li a{
+  color: red;
+}
+.fa{
+  vertical-align: inherit
+}
+
+.navbar-brand {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255,.55);
+  border-color: rgba(255,255,255,.1);
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: box-shadow .15s ease-in-out;
+}
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+button, select {
+  text-transform: none;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button {
+  border-radius: 2em;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.btn{
+  box-shadow: 2px 0 4px  olive;
+}
+button {  
+  appearance: auto;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  /* display: contents; */
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+/* .mb-2 {
+  margin-bottom: .5rem!important;
+}
+.me-auto {
+  margin-right: auto!important;
+} */
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  margin-bottom: 0;
+  list-style: none;
+}
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+ol, ul {
+  padding-left: 2rem;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+
+  /* fuente titulo */
+  .font-effect-neon{
+    /* font-size: 3em; */
+    color: #c0dde4;
+  }
+  
+  /* .container1{
+    background: linear-gradient(rgba(182, 180, 180, 0.61),rgb(76, 230, 158)),
+      url('./assets/imagenes/fondo.jpg');
+  }
+  .containe2r{
+     background: #200122;  */ /* fallback for old browsers */
+     /* background: -webkit-linear-gradient(to right, #6f0000, #200122);  */ /* Chrome 10-25, Safari 5.1-6 */
+  /*     background: linear-gradient(to right, #6f0000, #200122); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* } */
+  
+  /*   .container-fluid{     
+   padding-bottom: .5rem;
+  } */
+
+  .fa{
+    color:#50a708;
+  }
+  
+  hr{
+    border-color: #c0dde4;
+    border-width: .3rem;
+    background-color: #75dd20;
+    max-width:80%;
+    margin: 1rem auto ; /* der izq y auto sera arriba y abajo*/
+    opacity: 100%;
+    /* box-shadow: 0,0,22px,-4px violet; */
+   }
+   

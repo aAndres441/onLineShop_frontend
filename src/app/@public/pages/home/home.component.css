@@ -1,0 +1,25 @@
+.aa{
+    background-color: palegreen;
+     color:black;
+}
+
+.aa,h2,h3 {
+   background-color: rgb(248, 170, 209);
+  text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+  }
+
+  p{
+    background-color: grey; 
+    color: honeydew; 
+    text-align: center;
+  }
+
+  i{
+    color: gray;
+  }

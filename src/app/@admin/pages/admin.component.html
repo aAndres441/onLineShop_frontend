@@ -1,0 +1,23 @@
+
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <app-admin-sidebar *ngIf="toogleAlHijo"></app-admin-sidebar>
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <!-- header -->
+    <app-admin-header (changeToogle)=escondeToogle($event)></app-admin-header>
+
+    <!-- title -->
+    <div class="container-fluid">
+      
+      <app-admin-title></app-admin-title>
+      
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>

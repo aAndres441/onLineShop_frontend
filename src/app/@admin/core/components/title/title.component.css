@@ -1,0 +1,57 @@
+/* Traigo para usar de referencia este estilo */
+@import "./../../../pages/admin.component.css";
+
+
+.navbar-brand {
+    color:#4f91f5;
+}
+
+.navbar-brand:hover{    
+ color: #c1f8c1;
+}
+h1{
+    text-align: center;
+    font-size:2em;
+    /* color: #1fa67a; */
+    text-shadow: 4px 3px 0 gray, 8px 7px 0 rgb(0 0 0 / 15%);
+}
+
+ 
+hr{
+    text-shadow: 4px 3px 0 #1d9d74, 8px 7px 0 rgb(0 0 0 / 15%);
+
+    border-color: #c1f8c1;
+    border-width: .3rem;
+    background-color: #c1f8c1;
+    max-width:70%;
+    margin: 1rem auto ; /* der izq y auto sera arriba y abajo*/
+    opacity: 100%;
+    /* box-shadow: 0,0,22px,-4px violet; */
+    position: relative;
+    font-family: Arial, sans-serif; /* choose the font you like */
+    text-align: center; /* horizontal centering */
+    line-height: 1px; /* vertical centering */
+    height: 1px; /* gap between the lines */
+    font-size: 1em; /* choose font size you like */
+    /* border:  solid 2px #1ed30e; */ /* top and bottom borders */
+    /*  margin: 20px 10px; */ /* 20px space above/below, 10px left/right */
+    overflow: visible;
+
+    /* ensure 1px gap between borders */
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  hr::after{
+    content: "§"; /* section sign */
+    font-size: 2em;
+    color: #c1f8c1;
+    display: inline; /* for vertical centering and background knockout */
+    /* background-color: #454545; */ /* same as background color */
+    /* padding: 0 0.5em; */ /* size of background color knockout */
+    position: absolute;
+
+  }

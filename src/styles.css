@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*  QUITAR STYLS  DEL NAVEGAOR*/
+ /* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  } */
+ 
+ .body2{
+       background-image: url('./assets/images/wikimedia.png'); 
+      /*background: linear-gradient(rgba(182, 180, 180, 0.61),rgb(76, 230, 158)),
+                  url('./assets/images/wikimedia.png');*/
+      background-position: center;
+      background-size: cover; /* cover contain*/
+      /* opacity: 100%; */
+    background-repeat: no-repeat;
+      /* height: 100vh; */
+      /* font-size: 8px; 
+      podria definir aca el font y usar rem como medida
+      1 rem = 16 px */
+      /* height: 50vh;  */
+  }
+  body{
+    background: #dfffd0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c7e1e7, #dfffd0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c7e1e7, #dfffd0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+  
+  .myTitulo {
+      font-family: 'Raleway', sans-serif;
+      color: greenyellow;
+      text-align: center;
+      margin-top: 14px;
+  }

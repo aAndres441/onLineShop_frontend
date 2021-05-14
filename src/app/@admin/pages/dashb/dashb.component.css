@@ -1,0 +1,118 @@
+
+.container{   
+    text-align: center;
+    align-items:center;
+  }
+/* 
+  p{
+      color: blue;
+  } */
+  
+  hr{
+    border-color: #c0dde4;
+    border-width: .3rem;
+    background-color: #8be1f7;
+    max-width:70%;
+    margin: 1rem auto ; /* der izq y auto sera arriba y abajo*/
+    opacity: 100%;
+    /* box-shadow: 0,0,22px,-4px violet; */
+    position: relative;
+    font-family: Arial, sans-serif; /* choose the font you like */
+    text-align: center; /* horizontal centering */
+    line-height: 1px; /* vertical centering */
+    height: 1px; /* gap between the lines */
+    font-size: 1em; /* choose font size you like */
+    /* border:  solid 2px #1ed30e; */ /* top and bottom borders */
+    /*  margin: 20px 10px; */ /* 20px space above/below, 10px left/right */
+    overflow: visible;
+
+    /* ensure 1px gap between borders */
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  .myHr{
+    background-color: rgb(14, 129, 236);
+    border: solid 2px #f70606; 
+    width: 40%;
+    height: .5rem;
+    /*  width: 10rem;  Ya esta dado mas arrriba con un mximo 20%*/
+    position: relative;
+  }
+  
+  hr::after{
+    content: "§"; /* section sign */
+    font-size: 2em;
+    color: rgb(142, 241, 76);
+    display: inline; /* for vertical centering and background knockout */
+    /* background-color: #454545; */ /* same as background color */
+    /* padding: 0 0.5em; */ /* size of background color knockout */
+    position: absolute;
+
+  }
+  
+  .myHr::before{
+    background-color: rgb(14, 129, 236);
+    border: solid 2px #f70606;
+    width: 100%;
+    height: .5rem;
+    position: absolute;
+    content: '';
+    left: 150%;
+  }
+  .myHr::after{
+    content: "§"; /* section sign */
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(78, 24, 226);
+    position: absolute;
+    left: 120%;
+    top: -1rem;
+     /* bottom: 0; */ 
+    /* bottom: -2px;
+    border-radius: 40%; */
+    /*  margin-left: 4px; */
+    /* justify-content: 12em; */
+    /* align-items: flex-end; */
+    /* justify-items: auto;
+    justify-content: space-between;
+    align-content: stretch;*/
+  } 
+  
+  /* ******** NETFLIX ****************** */
+  
+  /* .netflix{
+    background-color: #e70606;
+    width: 5rem;
+    height: 10rem;
+    position: relative;
+  }
+  .netflix::before{
+    background-color: #e70606;
+    width: 5rem;
+    height: 10rem;
+    position: absolute;
+    content: '';
+    left: 10rem;
+  }
+  .netflix::after{
+    background-color: #222;
+    width: 15rem;
+    height: .5rem;
+    position: absolute;
+    content: '';
+    left: .5px;
+    bottom: -2px;
+    border-radius: 40%;
+  }
+  .netflix span{    
+    background-color: #dbff0d;
+    width: 5rem;
+    height: 10rem;   
+    position: absolute; 
+    left: 5rem;
+    transform: skew(45deg);
+    box-shadow:0,0,15px,-15px rgb(4, 4, 122);
+  } */

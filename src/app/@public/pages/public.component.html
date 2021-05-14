@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" [routerLink]="'/admin'">
+            <h1 class="font-effect-neon "> {{title}} </h1>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink='/contact'>
+                        <i class="fa fa-compress fa-2x"></i>Contact
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink='/navbar'>
+                        <i class="fa fa-compress fa-2x"></i>Navbar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink='/login'>
+                        <i class="fa fa-sign-ins fa-2x"></i>Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink='/about'>
+                        <i class="fa fa-user-o fa-2x"></i>About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " [routerLink]="'/admin'" tabindex="-1" aria-disabled="true">
+                        <i class="fa fa-reddit-alien fa-2x"></i>Admin
+                    </a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control mt-3" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-success" type="submit">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Buscar</font>
+                    </font>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid d-flex  h-100">
+    <div class="col-lg-12">
+        <hr>
+
+        <router-outlet></router-outlet>
+
+    </div>
+</div>

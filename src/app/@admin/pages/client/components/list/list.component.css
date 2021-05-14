@@ -1,0 +1,58 @@
+
+ .layout{
+    opacity: 90%;
+    /*background:url("../../../../../assets/imagenes/tormenta.png")  no-repeat center fixed;*/
+     /* background-image:  url("../../../../../assets/imagenes/tormenta.png");      */
+     background-color: rgb(212, 68, 231);
+     background-position: center; 
+     background-size: cover;
+     /* height: 100vh; */ /*100= toda la pantalla */
+     /* height: auto;  */ 
+     height: 70vh;   
+  }
+  
+  .container{
+    text-align: center;
+    align-items:center;
+  }
+  
+  /* fuente titulo */
+  .font-effect-neon{
+    /* font-size: 3em; */
+    color: #c0dde4;
+  }
+  
+  /* .container1{
+    background: linear-gradient(rgba(182, 180, 180, 0.61),rgb(76, 230, 158)),
+      url('./assets/imagenes/fondo.jpg');
+  }
+  .containe2r{
+     background: #200122;  */ /* fallback for old browsers */
+     /* background: -webkit-linear-gradient(to right, #6f0000, #200122);  */ /* Chrome 10-25, Safari 5.1-6 */
+  /*     background: linear-gradient(to right, #6f0000, #200122); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* } */
+  
+  .container-fluid{     
+   padding-bottom: .5rem;
+  }
+  
+  .btn a{
+   color: #c0dde4;
+  }
+  .btn:hover{
+   color: rgb(71, 68, 68);
+  }
+  /* .btn:hover{
+   background-color: aqua;
+  } */
+  
+  hr{
+   border-color: #c0dde4;
+   border-width: .3rem;
+   background-color: #c0dde4;
+   max-width:20%;
+   margin: 1rem auto ; /* der izq y auto sera arriba y abajo*/
+   opacity: 100%;
+   /* box-shadow: 0,0,22px,-4px violet; */
+  }
+  
