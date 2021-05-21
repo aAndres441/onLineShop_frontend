@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm navbar-dark custom sticky-top">
+    <ul class="navbar-nav">
+        <a class="nav-link " routerLink='/public/contact' routerLinkActive="true">
+            <i class="fa fa-compress fa-2x"></i>Contact
+        </a>
+        <li class="nav-item">
+            <a class="nav-link " routerLink='/public/about' routerLinkActive="true">
+                <i class="fa fa-user-o fa-2x"></i>About
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " [routerLink]="'/admin'" routerLinkActive="true">
+                <i class="fa fa-reddit-alien fa-2x"></i>Admin
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " [routerLink]="'/'" routerLinkActive="true">
+                <i class="fa fa-home fa-2x"></i>Home
+            </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink='/public/login' routerLinkActive="true">
+                <i class="fa fa-sign-in fa-2x"></i>Login
+            </a>
+        </li>
+        
+    </ul>
+  </nav>

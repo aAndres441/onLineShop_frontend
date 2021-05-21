@@ -1,0 +1,34 @@
+.top{
+    border-top: 2px solid rgb(73, 73, 247);
+    color: rgb(73, 73, 247);
+}
+.bottom{
+    border-bottom: 2px solid rgb(12, 216, 216) ;
+    color:rgb(12, 216, 216) ;
+}
+.left{
+    border-left: 1px solid rgb(235, 65, 14);
+}
+.right{
+    border-right: 1px solid coral;
+    color: coral;
+}
+.unaClase{
+    background-color: yellow;
+}
+.otraClase{
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+.very_poor{background-color: rgb(245, 89, 27);}
+.poor{background-color: rgb(250, 190, 25);}
+.good{background-color: rgb(174, 255, 158);}
+.excellent{background-color: rgb(227, 231, 201);}
+
+.table {
+    border: 2px solid white;
+}
+h3{
+   text-align:center;
+}

@@ -4,11 +4,11 @@ import { PublicComponent } from './public.component';
 
 const routes: Routes = [
   {
-     path: '',
+     path: 'public',
     component: PublicComponent,
     children: [
       {
-        path: 'home', loadChildren: () =>
+        path: '', loadChildren: () =>
           import('./home/home.module')
             .then(m => m.HomeModule)
       },

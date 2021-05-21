@@ -1,22 +1,23 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top
+ bg-light shadow  mb-4" >
     <div class="container-fluid">
-        <a class="navbar-brand" [routerLink]="'/admin'">
+        <!-- <a class="navbar-brand" [routerLink]="'/admin'"> -->
             <h1 class="font-effect-neon "> {{title}} </h1>
-        </a>
+   <!--      </a> -->
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">-----</span>
         </button>
-        <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
+        <div class="navbar-collapse collapse show" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link active" routerLink='/contact'>
+                    <a class="nav-link active" routerLink='/public/contact'>
                         <i class="fa fa-compress fa-2x"></i>Contact
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" routerLink='/navbar'>
+                    <a class="nav-link active" routerLink='/public/navbar'>
                         <i class="fa fa-compress fa-2x"></i>Navbar
                     </a>
                 </li>
@@ -39,20 +40,29 @@
             <form class="d-flex">
                 <input class="form-control mt-3" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-success" type="submit">
-                    <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Buscar</font>
+                    <font style="vertical-align: inherit;">Buscar
                     </font>
                 </button>
             </form>
-        </div>
+        </div>       
     </div>
 </nav>
+
 
 <div class="container-fluid d-flex  h-100">
     <div class="col-lg-12">
         <hr>
+        <app-header></app-header>
+        
+        <app-navbar></app-navbar>
 
-        <router-outlet></router-outlet>
+        <div class="main">
+            <router-outlet></router-outlet>
+        </div>
+
+        <hr>
+
+        <app-footer></app-footer>
 
     </div>
 </div>

@@ -3,3 +3,60 @@
         <p style="text-align: center">contact works!</p>
     </div>
 </div>
+
+
+<div class="container">
+    <!-- <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+    <div class="d-block p-2 bg-primary text-white">d-inline</div>
+<div class="d-inline p-2 bg-dark text-white">d-inline</div> -->
+    <table class="table table-danger table-striped">
+        <thead style="background-color:rgb(121, 245, 121)">
+            <h3  class="d-block p-2 border border-danger text-info bg-dark">
+                Variantes de ngClass y bootstrap
+            </h3>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h3>Class</h3>
+                </td>
+                <td>
+                    <p [ngClass]="'top'">Top</p>
+                </td>
+                <td>
+                    <p ngClass="bottom"> Bottom</p>
+                </td>
+                <td>
+                    <p [ngClass]="['left']"> Left</p>
+                </td>
+                <td>
+                    <p [ngClass]="{'right':true}">Right</p>
+                </td>
+                <td>
+                    <p class="unaClase top">Bonus</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Students</h3>
+                </td>
+                <td *ngFor="let stud of students">
+                    <span [ngClass]="stud.class">
+                        {{stud.name}} - {{stud.point}}
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Boton</h3>
+                </td>
+                <td colspan="2">
+                    <span [ngClass]="{'unaClase':flag,'otraClase':!flag}">{{flag}}</span>
+                </td>
+                <td  colspan="2">
+                    <button class="btn btn-success btn-block" (click)="changeTheme()">cambia {{!flag}}</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

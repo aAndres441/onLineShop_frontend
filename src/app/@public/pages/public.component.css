@@ -17,7 +17,9 @@
   margin-right: auto;
   margin-left: auto;
 } */
-
+.main{
+  margin-top:1.2rem;
+}
 .navbar {
   position: relative;
   display: flex;
@@ -71,16 +73,17 @@ button, input, optgroup, select, textarea {
   font-size: inherit;
   line-height: inherit;
 }
-button {
-  border-radius: 2em;
-}
 *, ::after, ::before {
   box-sizing: border-box;
 }
-.btn{
+.btn{  
+  border-radius: 2em;
   box-shadow: 2px 0 4px  olive;
+  padding: 1px 6px;
+  border-width: 1px;
+  border-style: outset;
 }
-button {  
+/* button {  
   appearance: auto;
   -webkit-writing-mode: horizontal-tb !important;
   text-rendering: auto;
@@ -103,7 +106,7 @@ button {
   border-style: outset;
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-image: initial;
-}
+} */
 .collapse:not(.show) {
   display: none;
 }
@@ -189,5 +192,11 @@ li {
     margin: 1rem auto ; /* der izq y auto sera arriba y abajo*/
     opacity: 100%;
     /* box-shadow: 0,0,22px,-4px violet; */
+   }
+   h1{
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    margin-right: 1rem;
+    white-space: nowrap;
    }
    

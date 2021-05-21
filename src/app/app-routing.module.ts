@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './@public/pages/home/home.component';
 
 const routes: Routes = [
-   {path: 'home', component: HomeComponent},
+   //{path: 'home', component: HomeComponent},
   /*{path: 'public/error', component: ErrorComponent}, */
 
-  {path: '', redirectTo: 'home' , pathMatch: 'full'},  // determinada para cuando se carga la app
-  {path: '**', redirectTo: 'error' , pathMatch: 'full'},  // comodin determinada por si n o coincide ninguna direccion y siempre al final,+
+  {path: '', redirectTo: 'public' , pathMatch: 'full'},  // determinada para cuando se carga la app
+  {path: '**', redirectTo: 'public/error' , pathMatch: 'full'},  // comodin determinada por si n o coincide ninguna direccion y siempre al final,+
 
 ];
 
