@@ -1,0 +1,176 @@
+
+/* nav Responsive mio */
+
+/* * ,*:before,*:after{
+     margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family:"Open Sans, Aial", "Helvetica Neue";
+    background-color: #f3cf8c;
+    color:#0aaf20;
+}  */
+.miHeaderResponsive{  /* Para iniciar */
+    margin: 0 0 1rem 0;
+    padding: 0;
+   /*  outline: 0;
+    box-sizing: border-box; */
+}
+.nuevoHeader{
+    font-family:"Open Sans, Aial", "Helvetica Neue";
+    background-color: #fcd07fec;
+    color:#0aaf20;
+    height: 82px;
+    width: 100%;      
+    box-shadow: -.5em 0 0.4em -1px olive inset; 
+}
+.mi-nav{    
+    display: flex; 
+    justify-content:space-between;
+    max-width: 992px;  /* vemos en bootstrap breackPoint */
+    margin: 0 auto; /* Lo centramos asi */
+}
+.logo{
+    font-size:3em;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height:82px; /* ALINEADO segun medidas de su contenedor */
+}
+.nav-menu{
+    text-decoration: none;
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+}
+.nav-menu-item{
+    margin:0 10px;
+    font-size:1.5em;
+    line-height: 82px;
+    text-transform: uppercase;
+    width: max-content; /* ALINEADO segun medidas de su contenedor */
+}
+.nav-menu-link, .logo{
+    color: #f7efef;
+    text-decoration: none;
+}
+.nav-menu-link{    
+    border:1px solid #7af18a;
+    padding:.5rem .5rem;
+}
+.nav-menu-link:hover{ 
+    /*transform:translateX(2rem); 
+    transform: scale(0.8,1.2);    
+    transform:rotateX(180deg);
+    transform: skew(20deg);
+    transform:rotate(90deg);    
+    border-radius: 16px;*/
+   color:rgb(68, 63, 63);
+    transition:1.2s; 
+}
+.btn-nav{
+    color: yellow;
+    background:none;
+    border:none;
+    font-size:40px;
+    padding:0 20px;
+    line-height:58px; /* preeviendo pantalla movil */
+    display:none;
+    cursor: pointer;
+}
+/* esto es media para moviles, al llegar a esta medida se cambia */
+@media(max-width:768px){
+    .container{
+        padding-top: 120px;
+    }
+    .nuevoHeader{
+        background-color: #a10aaf;
+        height: 58px;
+    }
+   
+    .logo{
+        font-size:2em;
+        padding: 0 10px;
+        line-height:58px; /* ALINEADO segun medidas de su contenedor */
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        margin-right: 1rem;
+        background-color:black;
+        /* position:fixed; */
+        /* left: 0;*/
+        top:58px;
+        width: 100%; 
+        padding:5px 0;
+        margin:0;
+
+        height:calc(100%-58px);/* Agrega scroll primero una medida y auto segun calc */
+        overflow-y: auto; 
+
+        left:50%;
+        transition:left 0.3s;
+    }
+    
+    .nav-menu-item{
+        font-size:1em;
+        line-height: 70px;
+        text-transform: lowercase;
+    }
+    .nav-menu-link{ 
+        border:none;
+    }
+    .nav-menu-link:hover{    
+        background:none;
+        color:cyan;
+    }
+    
+    .btn-nav{
+        display:block;
+        height: 55px;
+    }
+    .nav-menu_visible{
+        left:0;
+        background-color:rgb(195, 250, 43);
+    }
+}
+
+
+
+/* Variantes de ngClass */
+.top{
+    border-top: 2px solid rgb(73, 73, 247);
+    color: rgb(73, 73, 247);
+}
+.bottom{
+    border-bottom: 2px solid rgb(12, 216, 216) ;
+    color:rgb(12, 216, 216) ;
+}
+.left{
+    border-left: 1px solid rgb(235, 65, 14);
+}
+.right{
+    border-right: 1px solid coral;
+    color: coral;
+}
+.unaClase{
+    background-color: yellow;
+}
+.otraClase{
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+.very_poor{background-color: rgb(245, 89, 27);}
+.poor{background-color: rgb(250, 190, 25);}
+.good{background-color: rgb(174, 255, 158);}
+.excellent{background-color: rgb(227, 231, 201);}
+
+.table {
+    border: 2px solid white;
+}
+h3{
+   text-align:center;
+}

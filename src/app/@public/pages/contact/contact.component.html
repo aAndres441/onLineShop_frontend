@@ -1,62 +1,75 @@
-<div class="container lg-12 m-2" style="background-color: yellow;">
-    <div class="card" style="align-content: center;">
-        <p style="text-align: center">contact works!</p>
-    </div>
-</div>
+
 
 
 <div class="container">
-    <!-- <div class="d-inline p-2 bg-primary text-white">d-inline</div>
-    <div class="d-block p-2 bg-primary text-white">d-inline</div>
-<div class="d-inline p-2 bg-dark text-white">d-inline</div> -->
-    <table class="table table-danger table-striped">
-        <thead style="background-color:rgb(121, 245, 121)">
-            <h3  class="d-block p-2 border border-danger text-info bg-dark">
-                Variantes de ngClass y bootstrap
-            </h3>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <h3>Class</h3>
-                </td>
-                <td>
-                    <p [ngClass]="'top'">Top</p>
-                </td>
-                <td>
-                    <p ngClass="bottom"> Bottom</p>
-                </td>
-                <td>
-                    <p [ngClass]="['left']"> Left</p>
-                </td>
-                <td>
-                    <p [ngClass]="{'right':true}">Right</p>
-                </td>
-                <td>
-                    <p class="unaClase top">Bonus</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Students</h3>
-                </td>
-                <td *ngFor="let stud of students">
-                    <span [ngClass]="stud.class">
-                        {{stud.name}} - {{stud.point}}
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Boton</h3>
-                </td>
-                <td colspan="2">
-                    <span [ngClass]="{'unaClase':flag,'otraClase':!flag}">{{flag}}</span>
-                </td>
-                <td  colspan="2">
-                    <button class="btn btn-success btn-block" (click)="changeTheme()">cambia {{!flag}}</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+   
+    <div class="contact-wrapper animated bounceInUp">
+
+        <div class="contact-form">
+            
+            <h1 class="title">Contact <span>Us</span></h1>
+
+            <form action="">
+                <p>
+                    <label>FullName</label>
+                    <input type="text" name="fullname" required>
+                </p>
+                <p>
+                    <label>Email Adress</label>
+                    <input type="email" name="email" required>
+                </p>
+                <p>
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" name="phone"  required
+                    pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{3}">
+                </p>
+                <p>
+                    <label>Affair</label>
+                    <input type="text" name="affair">
+                </p>
+                <p class="block">
+                    <label>Message</label>
+                    <textarea name="message" rows="2"></textarea>
+                </p>
+                <p class="block">
+                    <button>
+                        Send
+                    </button>
+                </p>
+            </form>
+        </div>
+		
+        <div class="contact-info">
+            <h4>More Info</h4>
+            <div>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Baker Street</li>
+                    <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+                    <li><i class="fas fa-envelope-open-text"></i> contact@website.com</li>
+                    <li><i class="fas fa-book-open"></i> <a href='https://www.youtube.com/watch?v=rXWNr8sEUXE' target="_blank"> {{name}}</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="serendi">SERENDIPITY: Descubtimiento, hallazgo afortunado,valioso e inesperado que se produce de manera accidental, 
+                    casual, o cuando esta buscando una cosa distinta.Pero que son la solucion para otro probelema distinto.
+                    Chiripa, carambola, cuerte, casualidad, coincidencia, accidente.        
+                </p>
+                <p>Company.com</p>
+            </div>           
+
+             <!-- spinner CUBO -->
+             <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+              </div> 
+
+            <!-- spinner 1 no lleva css-->
+          <!--   <div class="d-flex justify-content-center">
+                <div class="spinner-grow " role="status"> </div>
+                <div class="spinner-grow text-success" role="status"> </div>
+                <div class="spinner-grow text-danger" role="status"> </div>
+               </div> -->
+             
+        </div>
+    </div>
 </div>

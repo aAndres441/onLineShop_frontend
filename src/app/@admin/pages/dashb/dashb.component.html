@@ -1,9 +1,116 @@
-<div class="container p-2">
+<div class="container p-3 my-3 border bg-dark text-white">
     <h2 style="text-align: center">Dashboard</h2>
+    <h3>Let`s raise a <span>glass</span> or two</h3>
     <hr>
     <!-- <div >        
         <span class="netflix">
             <hr class="myHr">
         </span>
     </div> -->
+    <div class="content">
+        <div class="element">1</div>
+        <div class="element">child</div>
+        <div class="element">3</div>
+        <div class="element">4</div>
+        <div class="element">3</div>
+        <div class="element">4</div>
+        <button type="button" class="btn btn-success" id="btn" (click)="ejecutar($event)">Ejecutar</button>
+    </div>
+
+
+    <div class="slider">
+        <div>
+            <p>Selector de colores</p>
+            <input type="color" value="#ee1111" />
+        </div>
+        <div class="contenido">
+            <p>Contenido</p>
+            <input type="text" placeholder="intro" list="carsList" />
+            <datalist id="carsList" class="datalist">
+                <option value="Audi"></option>
+                <option value="Ford"></option>
+                <option value="Fiat"></option>
+            </datalist>
+        </div>
+
+        <div class="details">
+            <p>Details/Sumari</p>
+            <details class="summary">
+                <summary>Detalles</summary>
+                <p>Fenix</p>
+                <p>Capurro</p>
+            </details>
+        </div>
+
+        <div>
+            <p>Tag "mark"</p>
+            <p>Marca de <mark>color</mark></p>
+        </div>
+
+        <div>
+            <p>Deshabilitar click</p>
+            <div oncontextmenu="return false">
+                <p>No podemos hacer click derecho</p>
+            </div>
+        </div>
+
+
+        <div>
+            <p>Progress</p>
+            <progress value="30" max="100"></progress>
+        </div>
+
+    </div>
+
+    <!-- TRANSFORM 3D,2D -->
+    <div>
+        <div class="transforma p-1 border bg-dark text-success">
+            <p>Transforms</p>
+            <div class="transforma_shadow">
+                <div class="transforma_shadow_circle"> </div>
+                <div class="transforma_shadow_scuare"> </div>
+                <div class="transforma_shadow_tresD">
+                    <div class="tresD_item"></div>
+                </div>
+                <div class="transforma_face">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                </div>
+            </div>
+            <div class="box box1 pt-3 text-white">box 1</div>
+            <div class="box box2 border mx-4">box 2</div>
+        </div>
+
+        <!-- Aceleracion  -->
+        <div class="aceleraWillChange">
+            <button class="btn1">btn1</button>
+            <p>will-change</p>
+            <button class="btn2">btn2</button>
+
+        </div>
+
+        <!-- -listado---- -->
+        <div class="nav-listado">
+            <p>Listados</p>
+            <ul>
+                <li><a href="/">Vehiculos</a>
+                    <ul>
+                        <li><a href="/" target="_blank">Camion</a>
+                            <ul>
+                                <li><a href="/" target="_blank">Mann</a></li>
+                                <li><a href="/" target="_blank">Ford</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/" target="_blank">Auto</a></li>
+                        <li><a href="/" target="_blank">Moto</a>
+                            <ul>
+                                <li><a href="/" target="_blank">Calela</a></li>
+                                <li><a href="/" target="_blank">Motoneta</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>

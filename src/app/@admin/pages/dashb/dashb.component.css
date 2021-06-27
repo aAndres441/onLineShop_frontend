@@ -116,3 +116,272 @@
     transform: skew(45deg);
     box-shadow:0,0,15px,-15px rgb(4, 4, 122);
   } */
+
+  /* ---  toogle class ---- */
+
+  .content{
+  position: relative;
+  /* display: flex; */
+  /* flex-direction: row; */
+  display: grid;  
+  background-color: rgba(58, 58, 56, 0.26);
+  border: 2px solid #9acd32;
+  border-radius: 1.25rem;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+  grid-template-columns: 3fr 3fr; /* divido y tomo 4 y 1 */
+
+  padding: 2px;
+  margin: .3em;
+  }
+
+  .content> * {
+    padding:1em;
+}
+  .content .btn{
+      grid-column: 1 / 4;
+}
+  .element{
+    width: 4rem;
+    height:3rem;
+    background-color:cadetblue;
+    border: 1px solid #f70606;
+  }
+  .newClass{
+    transform:translateX(2rem);
+  }
+  mark{
+    background-color: #9acd32;
+  }
+  span{
+    color:#f70606;
+  }
+
+  /*--------- Transforms1 ------------*/
+
+  .details:not(.summary){
+    color:rgb(255, 0, 255);
+  }    
+.content div:nth-child(2){
+  background-color:yellow;
+  color:black;
+}
+
+.slider::before {
+  content: ":: Before Slider";
+  background-color:rgb(182, 7, 103);
+}
+.slider::after {
+  content: ":: After Slider";
+  background-color:blue;
+}
+
+/*--------- + Transforms ------------*/
+
+.transforma{
+  display:flex;
+  justify-content: space-around;
+}
+
+.transforma_shadow{
+  display:flex;
+  justify-content: space-around;
+  /* background-color:grey; */ 
+  background-color: rgba(58, 58, 56, 0.26);
+  border: 1px solid #9acd32; 
+  width:600px;
+  height:100px;  
+  margin:auto;
+}
+.transforma_shadow_circle{
+  margin:auto;
+  background: #1E9600;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width:80px;
+  height:90px;
+  border-radius: 50%;
+  will-change: transform; /* Espera un cambio; para reducir movimiento */
+}
+.transforma_shadow_circle:hover {
+  transition-delay: 300ms; /* Defines when the transition will start. It allows a transition to begin execution some period of time from when it is applied. */
+  transform: scale(0.8,1.2);
+  transform: translate(120px, -20px); /* Equivalente a translateX(10px) */ 
+  transition: transform .5s;
+}
+
+.transforma_shadow_scuare{
+  width:100px;
+  height:80px; 
+  border-radius: 20%;
+  background-color: yellowgreen;
+  margin: 10px;
+}
+
+.ttransforma_shadow_scuare:hover{
+  transform: skew(20deg);
+  transform:rotate(90deg);
+  transition: transform 1000ms;
+}
+
+.transforma_shadow_tresD{  
+  position: relative;
+  width:100px;
+  height:80px; 
+  background-color: rgba(250, 95, 242, 0.548);
+  perspective:100px;  
+  margin: 10px;
+}
+.tresD_item{
+  position:absolute;
+  width:100px;
+  height:80px; 
+  border-radius: 20%;
+  border:3px solid red;
+  background-color: rgba(255, 242, 61, 0.637);
+  transform-style:preserve-3d;
+  transform: rotateY(-20deg);
+}
+/* -----FACE -------  */
+.transforma_face{
+ height:100px;
+ width: 100px;
+ transform-style: preserve-3d;
+ position: relative;
+ background-color: rgba(255, 0, 0, 0.205);
+ padding:2px;
+ transform:rotateY(180deg);
+}
+.face{
+  border-radius:20px;
+  width: 100%;
+  height:100%;
+  position:absolute;
+  backface-visibility: hidden;
+}
+.face.front{
+ background-color:yellowgreen;
+}
+.face.back{
+  background-color:blue;
+  transform:rotateX(180deg);
+}
+
+
+/* ------------ DISPLAY FLEX------- */
+/* .box-container{
+  background-color:papayawhip;
+  width: 400px;
+  height:100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+} */
+
+.box{
+  width: 100px;
+  height:100px;
+}
+.box1{
+  background-color:rgb(195, 138, 231);  
+}
+.box1:hover{  
+  transform:rotateX(90deg);
+  transition: transform 1000ms; 
+}
+.box2{
+  background-color:rgb(190, 113, 136);
+  transition: transform 1.5s ease-in-out;
+  border-radius:50%;
+  transition-delay:2s;
+}
+.transforma:hover .box2{
+  transform:translateX(-200px);
+  transition: transform 3s;
+}
+
+/* ----------------listado -------- */
+.nav-listado{
+  text-align:left;
+  color: yellow;
+  margin-left: 3em;
+  display: flex;
+}
+.nav-listado p{  
+  text-transform: uppercase;
+}
+
+
+/* 
+ul {
+  display: block;
+  list-style-type: disc; 
+  /*  list-style-type: square; */
+/*  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  padding-left: 5rem;;
+}
+ */
+.nav-listado a{
+  text-decoration: none; 
+}
+.nav-listado li ul {
+  /* list-style:none;   */
+ display:block;
+ opacity: 20%;
+ position:relative;
+}
+.nav-listado li:hover ul {
+  padding-inline-start: 40px;
+  list-style-type: square;
+ opacity: 2;
+ transition: opacity 500ms; /* tiempo en hacer efecto*/
+ transition-delay:300ms; /* lo que demora al poner cursor */
+}
+.nav-listado li ul li{
+  right: -80px;
+}
+
+
+/*--------Preferencias de aceleracion de hardware: will-change-------  */
+.aceleraWillChange{
+  display:flex;
+  /* align-content: center; */
+  justify-content: space-between;
+  border: 1px solid green;
+} 
+button{
+  background-color:#8be1f7;
+  width:100px;
+  height:50px;
+  border-radius:40%;
+}
+
+/*  ver si transition va en hover o en element, y si transform en los dos */
+.btn1{
+  will-change: transform;
+  transition:transform 0.5s;
+}
+.btn1:hover{
+  transform:translateY(-20px);
+}
+
+/*-----Preferencias para reducir Movimiento de pantalla;----  */
+@media(prefers-reduced-motion:no-preference){
+  .btn2{
+    will-change: transform;
+    transition: transform(200ms);
+  }
+  .btn2:hover{
+    transform:translateX(-120px);
+    transition-delay: 300ms;
+  }
+}
+

@@ -18,7 +18,7 @@ toogled(){
   }
   this.toogleValor = !this.toogleValor;
   console.log(this.toogleValor);
-  var button = document.getElementById('btn-menu-toggle')
+  let button = document.getElementById('btn-menu-toggle')
   console.log('BOTON', button);
   
   this.changeToogle.emit(this.toogleValor);

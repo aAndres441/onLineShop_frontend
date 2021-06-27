@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+.container {
+    background: #181818;
+   
+   /*  max-width: 1170px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5em;
+    color: rgb(235, 250, 21);
+    line-height: 1.6;
+    
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Forum', cursive; */
+    /* width: 900px; */
+    /* height:420px; */
+    list-style-type: square;
+  }
+  
+  .content-wrapper> * {
+    padding: .5em;
+  }
+
+.content-wrapper{
+    text-align: center;
+    align-items:center;
+    /* display:flex; */
+    box-shadow: 0 0 20px 0 rgba(227, 241, 223, 0.753);   
+    /* max-width: 1170px; */
+    background-image: url("../../../../assets/images/neon-flowers.jpg");    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* cover contain*/
+    opacity: 90%;
+    /*  height:100vh;
+    width: 100hv; */
+     padding:2em 1em;
+    /*  justify-content: center; */
+   /*  position: absolute;
+    transform: translateX(50%); */
+}
+
+
+  .login-form{
+    padding:1em;
+    width: 90%;
+    height:90%;
+    background-color: #b80f22;
+    color: yellow;
+    top:50%; /* lo centra con las dos prop juntas */
+    left:50%;    /* lo centra con las dos prop juntas */
+    margin-left: 39px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .content-wrapper label, h1{
+    margin:0;
+    padding:0;
+    display:block;/* para que este en una sola linea */
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+    color: #e1fa70;
+}
+.content-wrapper h1{
+  padding-bottom:10px;
+}
+
+.content-wrapper .avatar{
+    max-width:100px;
+  /*  width:100px;
+   height:100px; */
+    border-radius: 50%;
+   /*  transform:  translate(150%, 130%); */
+    /* margin-bottom: -25px; */
+    position:relative;
+    top: 15px;
+   /*  left:calc(50% -50px); */
+}
+
+ input{
+  color: rgb(173, 245, 173);font-size: xx-large;
+  /* width:100%; */
+  margin:.2em;
+  border:none;
+  outline:none;
+  background:transparent;
+  border-bottom: 1px solid white;
+}
+input[type="password"]{
+  color: rgb(233, 155, 131);
+}
+/* input[type="text"]{
+  background-color: #24251c75;  
+}
+ */
+button{
+  display:block;
+}
+input[type="submit"]{
+  color: rgb(233, 155, 131);
+  font-size:20px;
+  color: yellow;
+  border-radius:20px;
+  outline:none;
+  background-color: #b80f22;
+  will-change:transition;
+  height:130px;
+}
+input[type="submit"]:hover{
+  transition:1s;
+  background-color:#0fb80f;
+  color: white;
+  border:none;
+}
+a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+color:darkgray;
+}
+a:hover{
+  color:white;
+}

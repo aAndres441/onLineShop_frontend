@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'onLine Shop MEANg';
+  subTitle = 'i pulled out all my hair in the process ';
 }

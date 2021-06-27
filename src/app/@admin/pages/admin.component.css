@@ -156,7 +156,8 @@ ol, ul {
 
 ul {
   display: block;
-  list-style-type: disc;
+  list-style-type: disc; 
+  /*  list-style-type: square; */
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;

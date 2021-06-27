@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CreateComponent, DetailsComponent, EditComponent, ListComponent } from './components/index';
+//import { EditComponent } from './components/edit/edit.component';
+// import { EditComponent, CreateComponent, DetailsComponent, ListComponent } from './components/index';
 import { ClientComponent } from './container/client/client.component';
 
 const routes: Routes = [
-  {path:'',component:ClientComponent},
+ 
+   {path:'',component:ClientComponent,
+children: [
+ /* {path:'edit',component:EditComponent},
   {path:'create',component:CreateComponent},
-  {path:'details',component:DetailsComponent},
-  {path:'edit',component:EditComponent},
-  {path:'list',component:ListComponent},
+  {path:'details',component:DetailsComponent},  
+  {path:'list',component:ListComponent} */
+]},
+  
   
   /*  {path:'',component:DetailsComponent} */
 ];
@@ -18,3 +23,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class ClientRoutingModule { }
+ 

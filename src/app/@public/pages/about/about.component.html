@@ -1,1 +1,105 @@
-<p>about works!</p>
+
+<!--   Respponsivo  mio -->
+
+<div class="miHeaderResponsive">
+    <div class="nuevoHeader">
+        <div class="mi-nav">
+            <a href="#" class="logo">Logo</a>
+           
+            <ul class="nav-menu"  >
+                <!--  [ngClass]="{'nav-menu':flag,'nav-menu_visible':!flag}" -->
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link">Blog</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link">Videos</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link">Sobre mi</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link">Contactame</a></li>
+            </ul>
+            <button class="btn-nav" (click)="toggle()"  aria-label="">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <!-- <div class="unlorem">
+        Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. Atque architecto quasi enim. 
+        Distinctio suscipit libero itaque pariatur, 
+        doloremque eligendi explicabo earum ab provident, 
+        quidem quod sequi nemo doloribus corrupti nisi animi 
+        ipsum mollitia eveniet. Nesciunt sint quidem nihil repudiandae non! 
+        Eveniet, ut explicabo laborum mollitia recusandae libero fuga incidunt, 
+        suscipit cum officia praesentium voluptatem! Ex quos molestiae
+         molestias provident, quia, voluptatum voluptatibus minus voluptatem sit, 
+         omnis ab! Suscipit iure eum sapiente cupiditate ea dicta voluptas qui 
+         totam molestiae cumque doloremque, facere, necessitatibus modi fuga 
+         ! Ut reiciendis, aspernatur nobis error ratione culpa odio, repellat animi facil
+         is soluta laboriosam saepe, ducimus ex atque assumenda vel dicta pariatur 
+          consectetur explicabo numquam quibusdam. Expedita accusamus sunt dolorem consectetur esse. Ipsam esse laboriosam hic doloribus praesentium soluta minus adipisci quam nisi aspernatur ipsa, reiciendis eaque? Ipsam accusantium maxime suscipit voluptates doloribus tempore quod qui impedit necessitatibus ab vitae, vero consequatur tempora corporis sed molestiae repellat, reiciendis incidunt perferendis. Repudiandae id tempora eligendi corrupti dolor rem accusantium quia amet, voluptatem minima ab delectus consectetur voluptatum? Saepe deleniti voluptates a aliquid illum possimus, ullam ratione necessitatibus quia, atque adipisci mollitia natus illo fuga, praesentium facere quo consectetur dolorum totam veritatis doloribus reiciendis ipsa? Minima alias magni saepe architecto mollitia quis ducimus rem ex pariatur nostrum! Corrupti sunt vero facere alias repellat harum magni neque nesciunt, aliquid repellendus, nostrum cum pariatur nobis ducimus eligendi, explicabo delectus laboriosam quam temporibus commodi illo. Sit fugit consectetur quibusdam nesciunt sequi odit impedit natus? Incidunt vel dignissimos labore, ipsum alias nam fugiat sed? Dignissimos non doloribus, aliquid iusto ipsa dolores inventore facilis sunt dolorum cumque temporibus voluptate doloremque voluptas cupiditate vel consequatur? Incidunt, sunt exercitationem? Aspernatur laborum explicabo sit quidem ab, aliquid animi at accusamus repellendus distinctio id modi quaerat quo natus quasi voluptatum aliquam aut? Vitae ullam, tempora illum rem debitis ipsum minus cum odit aliquid itaque nobis odio! Sunt, quibusdam. Minus, perspiciatis voluptate reiciendis dicta dolor voluptatem cupiditate odio illum rerum ipsam iusto voluptatum molestiae provident, rem reprehenderit nihil nemo maxime corporis. Perferendis, repellendus eius assumenda commodi dicta totam ratione tenetur et numquam. Quis suscipit iure dolorum architecto quas fuga id dolorem eos inventore minus nesciunt, recusandae laboriosam! Quas qui eveniet voluptates. Quod illo doloribus voluptas odit incidunt architecto voluptates consectetur eum quae, repellendus, reprehenderit impedit optio. Cumque nulla dolorum perspiciatis nesciunt libero dolorem laudantium voluptatibus necessitatibus? Autem vitae quam repudiandae dolor molestias reiciendis inventore harum hic totam!
+          istinctio suscipit libero itaque pariatur, 
+          doloremque eligendi explicabo earum ab provident, 
+          quidem quod sequi nemo doloribus corrupti nisi animi 
+          ipsum mollitia eveniet. Nesciunt sint quidem nihil repudiandae non! 
+          Eveniet, ut explicabo laborum mollitia recusandae libero fuga incidunt, 
+          suscipit cum officia praesentium voluptatem! Ex quos molestiae
+           molestias provident, quia, voluptatum voluptatibus minus voluptatem sit, 
+           omnis ab! Suscipit iure eum sapiente cupiditate ea dicta voluptas qui 
+           totam molestiae cumque doloremque, facere, necessitatibus modi fuga 
+           ! Ut reiciendis, aspernatur nobis error ratione culpa odio, repellat animi facil
+           is soluta laboriosam saepe, ducimus ex atque assumenda vel dicta pariatur 
+            consectetur explicabo numq
+    </div> -->
+</div>
+
+<div class="container">
+    <!-- <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+    <div class="d-block p-2 bg-primary text-white">d-inline</div>
+<div class="d-inline p-2 bg-dark text-white">d-inline</div> -->
+    <table class="table table-danger table-striped">
+        <thead style="background-color:rgb(121, 245, 121)">
+            <h3  class="d-block p-2 border border-danger text-info bg-dark">
+                Variantes de ngClass y bootstrap, arriba navBar.
+            </h3>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h3>Class</h3>
+                </td>
+                <td>
+                    <p [ngClass]="'top'">Top</p>
+                </td>
+                <td>
+                    <p ngClass="bottom"> Bottom</p>
+                </td>
+                <td>
+                    <p [ngClass]="['left']"> Left</p>
+                </td>
+                <td>
+                    <p [ngClass]="{'right':true}">Right</p>
+                </td>
+                <td>
+                    <p class="unaClase top">Bonus</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Students</h3>
+                </td>
+                <td *ngFor="let stud of students">
+                    <span [ngClass]="stud.class">
+                        {{stud.name}} - {{stud.point}}
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Boton</h3>
+                </td>
+                <td colspan="2">
+                    <span [ngClass]="{'unaClase':flag,'otraClase':!flag}">{{flag}}</span>
+                </td>
+                <td  colspan="2">
+                    <button class="btn btn-success btn-block" (click)="changeTheme()">cambia {{!flag}}</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
