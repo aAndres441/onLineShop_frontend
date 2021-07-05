@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HourAccesGuard } from '../guards/hour-acces.guard';
 import { PublicComponent } from './public.component';
 
 const routes: Routes = [
   {
      path: 'public',
-    component: PublicComponent,
+    component: PublicComponent, /* canActivateChild:[HourAccesGuard], */
     children: [
       {
         path: '', loadChildren: () =>

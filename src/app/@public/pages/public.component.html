@@ -47,14 +47,19 @@
         </div>       
     </div>
 </nav>
+<div class="currentTime" style="text-align:center; color:white">
+    <span><b>{{date|date:'shortTime'}}</b></span> |
+    <span><b>{{hour}}:{{min}}</b></span>
+</div>
 
 
 <div class="container-fluid d-flex  h-100">
     <div class="col-lg-12">
         <hr>
+        
         <app-header></app-header>
         
-        <app-navbar></app-navbar>
+        <app-navbar [unTitulo]='title'></app-navbar>
 
         <div class="main">
             <router-outlet></router-outlet>

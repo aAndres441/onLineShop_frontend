@@ -13,7 +13,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 2.5em;
-    color: rgb(235, 250, 21);
+    color: rgb(21, 113, 250);
     line-height: 1.6;
     
     /* font-family: 'Raleway', sans-serif; */
@@ -123,8 +123,59 @@ a{
   text-decoration: none;
   font-size: 12px;
   line-height: 20px;
-color:darkgray;
+  color:darkgray;
 }
 a:hover{
+  transition:2s;
   color:white;
+}
+
+/* -----Grid templates --------- */
+.grid-container {
+  display: grid;
+  grid-gap: .4em;
+  padding: 4px;
+  /* grid-template-columns: auto auto auto ; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr ; 
+  grid-template-rows: auto auto auto auto auto; */
+  background-color: #9b799e57; 
+  grid-template-areas: 
+  'header header aside aside aside aside'
+  'mainHour mainHour mainHour mainDate mainDate mainDate'
+  'footer footer footer footer footer footer';
+}
+
+.grid-container > div {
+  background-color: rgba(51, 12, 12, 0.212);
+  text-align: center;
+  /* padding: 20px 0;
+  font-size: 30px; */
+  color:white;
+}
+
+.grid-container .item1 {
+  /* grid-row: 1 / span 2; */ /* comience en la fila 1 y abarque 2 filas */
+  grid-area: aside;
+}
+.grid-container .item2 {
+  background-color:rgba(26, 22, 2, 0.849) ;
+ /*  grid-column: 2/ span 3; */ /* comience en la columna 2 y abarque 3 columnas: */
+  grid-area: mainHour;
+}
+.grid-container .item3{
+  background-color:rgba(26, 22, 2, 0.849) ;
+  grid-area: mainDate;
+}
+
+.grid-container .item5{
+  grid-area: footer;
+  background-color: maroon;
+}
+
+.item4{ 
+  grid-area: header;
+}
+.item4:before{
+  content: 'No ImportaSuPosicion';
+  color:#f18a8a
 }
